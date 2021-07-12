@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515180613654",
+    "project_id": "cokavach-21c6f",
+    "storage_bucket": "cokavach-21c6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515180613654:android:560414c021dc20dd0a2537",
+        "android_client_info": {
+          "package_name": "com.risingstar.cokavach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515180613654-qe61uir44pep9ss0gpcp300lh8rh109r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2jIzKg58ZX3PeOpgYF6KP_si7Sh9mSyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515180613654-qe61uir44pep9ss0gpcp300lh8rh109r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

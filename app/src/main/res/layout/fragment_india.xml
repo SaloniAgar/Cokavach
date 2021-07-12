@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.IndiaFragment">
+
+    <SearchView
+        android:id="@+id/searchState"
+        android:layout_width="300dp"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/custom_bg"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/sortIndia"
+        android:layout_width="50dp"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/searchState"
+        android:layout_toEndOf="@+id/searchState"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_sort"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerIndia"
+        android:layout_below="@+id/searchState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        tools:listitem="@layout/india_recycler_single_row"/>
+
+</RelativeLayout>

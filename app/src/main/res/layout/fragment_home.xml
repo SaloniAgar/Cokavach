@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_margin="8dp"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <org.eazegraph.lib.charts.PieChart
+                            android:id="@+id/piechart"
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1.3"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            app:egLegendTextSize="12sp"
+                            app:egLegendColor="@color/black"
+                            app:egUsePieRotation="true"
+                            app:egValueTextSize="10sp"
+                            app:egValueTextColor="#250263"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_weight="0.7">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:orientation="horizontal"
+                                android:layout_margin="6dp">
+                                <View
+                                    android:layout_width="18dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#56B7F1"
+                                    android:layout_margin="4dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Cases"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:orientation="horizontal"
+                                android:layout_margin="6dp">
+                                <View
+                                    android:layout_width="18dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#FE6DA8"
+                                    android:layout_margin="4dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Deaths"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:orientation="horizontal"
+                                android:layout_margin="6dp">
+                                <View
+                                    android:layout_width="18dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#FED70E"
+                                    android:layout_margin="4dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Recovery"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+<!--
+                <ImageView
+                    android:id="@+id/imgRefresh"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_refresh" />
+                    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="9dp"
+        android:baselineAligned="false">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_purple_circle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="Total Cases"
+                        android:textColor="@color/Cases"
+                        android:textSize="16sp" />
+            </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTotalCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="6dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_purple_circle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="New Cases"
+                        android:textColor="@color/Cases"
+                        android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvNewCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_gravity="center_horizontal"
+                    android:baselineAligned="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/white"
+                        android:layout_gravity="center_horizontal">
+                    <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_red_circle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="Total Deaths"
+                        android:textColor="@color/Death"
+                        android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTotalDeaths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="6dp"
+                        android:background="@color/white"
+                        android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:padding="2dp">
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:adjustViewBounds="true"
+                           android:scaleType="fitXY"
+                           android:src="@drawable/ic_red_circle" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginStart="8dp"
+                           android:layout_marginLeft="8dp"
+                           android:text="New Deaths"
+                           android:textColor="@color/Death"
+                           android:textSize="16sp" />
+
+                   </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvNewDeaths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:baselineAligned="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/white"
+                        android:layout_gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="2dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_green_circle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:text="Total Recovered"
+                                android:textColor="@color/Recovery"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvTotalRecovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:gravity="end"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="6dp"
+                        android:background="@color/white"
+                        android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="2dp">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_green_circle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="4dp"
+                                android:text="New Recovered"
+                                android:textColor="@color/Recovery"
+                                android:textSize="16sp"
+                                android:layout_marginEnd="4dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvNewRecovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:gravity="end"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+</LinearLayout>
