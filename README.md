@@ -1,5 +1,5 @@
 # CoKavach
-**An android app that gives you track of Covid-19 cases, deaths ,recovery and vaccination in the world and India.**
+**AN ANDROID APP THAT GIVES YOU TRACK OF COVID-19 CASES, DEATHS ,RECOVERIES AND VACCINATIONS IN THE WORLD AND INDIA.**
 
 The app uses REST API and Volley library to fetch and display all the data. Helpline numbers are also displayed using recycler view.It uses phone number signin.
 
